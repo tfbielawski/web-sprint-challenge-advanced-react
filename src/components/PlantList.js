@@ -1,3 +1,11 @@
+/**
+ * Tom Bielawski
+ * Lambda School WEB45 
+ * Advanced React Sprint Challenge
+ * 8/6/2021
+ */
+
+//Imports
 import React, { Component } from "react";
 import axios from "axios";
 
