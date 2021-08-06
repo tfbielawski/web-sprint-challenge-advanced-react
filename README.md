@@ -40,9 +40,9 @@ You will also need to build the two tests in the `CheckoutForm.test.js` file and
 
   Display a list of the plants from the server. This should be done in the class component `PlantList`. **Unlike other projects, the local server used here can not be accessed through the browser. It is started automatically and without the need for starting a server.js file. Feel free to ignore any messages related to MSW or mock service workers. For this and the rest of your sprint challenges, test the functioning of the server directly through your axios calls.**
 
-* [ ] In the `PlantList` class component, fetch data from the server you now have running - the data can be fetched from `http://localhost:3333/plants.`
-* [ ] Set the data to a state property called `this.state.plants.`
-* [ ] The render function is already built and styled. Once the data is on the state, you will see the list of plants, and you will have the functionality to add a plant to the cart.
+* [x] In the `PlantList` class component, fetch data from the server you now have running - the data can be fetched from `http://localhost:3333/plants.`
+* [x] Set the data to a state property called `this.state.plants.`
+* [x] The render function is already built and styled. Once the data is on the state, you will see the list of plants, and you will have the functionality to add a plant to the cart.
 
 #### Shopping Cart
 
@@ -104,9 +104,13 @@ You will also need to build the two tests in the `CheckoutForm.test.js` file and
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. Add your answers to the questions within `interview_answers.md` file. These will not be counted as a part of your sprint score but will be helpful for preparing you for your endorsement interview, and enhancing overall understanding.
 
 1. What are the main differences between a stateful and a functional component?
+State is an object owned by a component, so stateful components have state objects. Functional components are js components that have props objects.
 
 2. When does a componentWillMount function be called? What about a componentWillUpdate?
+componentWillMount is a lifecycle hook called before the initial render, and it is called before the component is updated.
 
 3. Define stateful logic.
+Stateful logic is logic / functions that are built into components. 
 
 4. What are the three step of creating a successful test? What is done in each phase?
+The three steps of creating a successful test are arrange, act, assert. 

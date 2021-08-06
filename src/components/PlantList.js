@@ -4,13 +4,35 @@ import axios from "axios";
 export default class PlantList extends Component {
   // add state with a property called "plants" - initialize as an empty array
 
+  //Added plants array to state
+  state =
+  {
+    plants: []
+  }
+
   // when the component mounts:
   //   - fetch data from the server endpoint - http://localhost:3333/plants
   //   - set the returned plants array to this.state.plants
 
-  componentDidMount() {
+  componentDidMount() 
+  {
+    //Axios gets data from endpoint
     axios.get('http://localhost:3333/plants')
-      .then(res => {
+      //Then...
+      .then(res => 
+      {
+        //...it sets the plant state with data 
+        this.setState
+        ({
+          plants: res.data
+        })
+
+        //Catch errors
+        .catch((error) =>
+        {
+          //Log the error
+          console.log("No 'thyme' for nonsense! Something's wrong, and I'm 'rooting' for you to figure it out. ", error);
+        })
         
       });
   }
