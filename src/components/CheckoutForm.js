@@ -26,7 +26,8 @@ const initialValue = {
 //Removed submit and change handlers, added to custom hook
 const CheckoutForm = (props) => 
 {
-  const [showSuccessMessage, setShowSuccessMessage] = useForm();
+  //Added values, change and submit handlers, and init to initialValue
+  const [values, handleChanges, handleSubmit, showSuccessMessage, setShowSuccessMessage] = useForm(initialValue);
   
 
   return (
